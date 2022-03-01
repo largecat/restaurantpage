@@ -1,0 +1,74 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html,
+body {
+	height: 100vh;
+	background-color: rgb(13, 16, 31);
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: lighter;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+}
+
+header {
+	color: rgb(25, 35, 54);
+	flex: none;
+	height: auto;
+	padding: 15px;
+	background-color: bisque;
+	display: grid;
+	justify-items: center;
+	grid-template-rows: auto auto;
+}
+
+#logo {
+	height: 100px;
+	margin-left: 10px;
+}
+
+.description {
+	background-color: antiquewhite;
+	width: 80%;
+	font-size: 1.5rem;
+	flex: 1 1 auto;
+	padding: 20px;
+	border: 1px solid grey;
+	justify-content: center;
+	margin: 20px;
+}
+
+#content {
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+}
+
+.writer {
+	font-weight: bold;
+	display: block;
+	text-align: right;
+}
+
+main {
+	height: auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: 20px;
+}
+
+.mainImg {
+	/* background-image: url('./images/thomas-marban-EHK-EH1SRzQ-unsplash.jpg'); */
+	object-fit: cover;
+	max-height: 400px;
+	width: 80%;
+	display: flex;
+	flex: 1 1 auto;
+}
