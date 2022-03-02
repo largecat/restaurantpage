@@ -14,11 +14,7 @@ module.exports = {
 			},
 			{
 				test : /\.(png|svg|jpg|jpeg|gif)$/i,
-				type : 'file-loader'
-			},
-			{
-				test   : /\.(jpe?g|jpg|png|gif|woff|woff2|eot|ttf|svg)(\?[a-z0-9=.]+)?$/,
-				loader : 'url-loader'
+				type : 'asset/resource'
 			}
 		]
 	}
