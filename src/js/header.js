@@ -1,6 +1,7 @@
 import Logo from '../images/ship.png';
 
 function header() {
+	const content = document.querySelector('#content');
 	const header = document.createElement('header');
 
 	const logo = new Image();

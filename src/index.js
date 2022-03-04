@@ -2,6 +2,7 @@ import { homePage } from './js/homePage';
 import { Menu } from './js/menu';
 import { makeContacts } from './js/contact';
 import { header } from './js/header';
+// import './images/favicon1.ico';
 import './style.css';
 
 const content = document.querySelector('#content');
