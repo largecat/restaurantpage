@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,200;0,300;0,400;0,500;1,400&display=swap');
+
 * {
 	margin: 0;
 	padding: 0;
@@ -8,9 +10,7 @@ html,
 body {
 	height: 100vh;
 	background-color: rgb(13, 16, 31);
-	font-family: Arial, Helvetica, sans-serif;
-	font-weight: lighter;
-	font-size: small;
+	font-family: 'Raleway';
 }
 
 body {
@@ -19,30 +19,42 @@ body {
 }
 
 header {
-	color: rgb(25, 35, 54);
+	background-color: rgb(170, 100, 88);
+	color: rgb(22, 22, 22);
+	font-style: italic;
 	flex: none;
 	height: auto;
-	padding: 10px;
-	background-color: bisque;
 	display: grid;
 	justify-items: center;
 	grid-template-rows: auto auto;
 }
 
-#logo {
-	height: 100px;
-	margin-left: 10px;
+nav {
+	display: grid;
+	grid-template-columns: auto auto auto;
 }
 
-.description {
-	background-color: antiquewhite;
-	width: 80%;
-	font-size: 1.5rem;
-	flex: 1 1 auto;
-	padding: 20px;
-	border: 1px solid grey;
-	justify-content: center;
+main {
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 	margin: 20px;
+}
+
+.btn {
+	background-color: rgb(133, 196, 133);
+	border-style: none;
+	border-radius: 3px;
+	height: 30px;
+	line-height: 30px;
+	vertical-align: middle;
+	width: 60px;
+	margin: 10px 30px;
+}
+
+.btn:focus {
+	background-color: rgb(99, 143, 97);
 }
 
 #content {
@@ -51,64 +63,99 @@ header {
 	flex-direction: column;
 }
 
-.writer {
+#logo {
+	height: 60px;
+	margin: 10px 0 5px;
+	margin-left: 10px;
+}
+
+#menu-logo {
+	height: 50px;
+	margin: 20px auto;
+	filter: invert(48%) sepia(13%) saturate(3207%) hue-rotate(130deg) brightness(95%) contrast(80%);
+}
+
+.description {
+	background-color: antiquewhite;
+	width: 80%;
+	font-size: 1.2rem;
+	flex: 1 1 auto;
+	padding: 15px;
+	border: 1px solid grey;
+	border-radius: 5px;
+	justify-content: center;
+	margin: 10px;
+}
+
+.quoter {
 	font-weight: bold;
 	display: block;
 	text-align: right;
 }
 
-main {
-	height: auto;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	margin: 20px;
-}
-
-.mainImg {
+.main-img {
 	object-fit: cover;
-	max-height: 400px;
+	max-height: 350px;
 	width: 80%;
 	display: flex;
 	flex: 1 1 auto;
 }
 
-.btn {
-	background-color: rgb(151, 223, 151);
-	border-style: none;
-	height: auto;
-	width: 70px;
-	margin: 10px;
-	padding: 10px;
-}
-
-.btn:focus {
-	background-color: brown;
-}
-
-nav {
-	display: grid;
-	grid-template-columns: auto auto auto;
-}
-
 .menu {
 	text-align: center;
-	background-color: aquamarine;
-	height: 500px;
-	width: 80%;
+	background-color: rgba(89, 187, 154, 0.726);
+	height: auto;
+	width: 85%;
+	padding: 20px;
 }
 
-.menuContent {
-	display: grid;
-	grid-template-columns: auto auto auto;
+.menu h1 {
+	color: rgb(39, 39, 39);
+	margin-bottom: 15px;
+}
+
+.menuBox {
+	padding: 10px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+.menu-category {
+	flex: 33%;
+}
+
+.menu-item {
+	display: flex;
+	justify-content: space-around;
+	margin: 15px 0;
+}
+
+.menu-item :nth-child(2) {
+	margin-left: 20px;
+}
+
+@media screen and (max-width: 685px) {
+	.menuBox {
+		flex-direction: column;
+	}
+	.menu-category {
+		flex: 100%;
+	}
 }
 
 .contacts {
-	background-color: blueviolet;
-	height: 500px;
+	text-align: center;
+	color: rgb(39, 39, 39);
+	background-color: rgb(108, 94, 121);
+	height: 100%;
 	width: 80%;
+	padding: 20px;
 }
-/* 
-.selectedBtn {
-	background-color: brown;
-} */
+
+.contact-box {
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
